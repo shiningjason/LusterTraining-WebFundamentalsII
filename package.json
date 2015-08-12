@@ -1,0 +1,20 @@
+{
+  "name": "web-fundamentals-tutorial",
+  "version": "1.0.0",
+  "description": "達暉教育訓練 / Web 基礎課程 II",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "author": "Jason Chung",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "babel": "^5.8.20",
+    "browser-sync": "^2.8.2"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal/css/reveal.css">
+  <link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+  <title>Slides | Web Fundamentals II</title>
+  <style>
+    .reveal section img {
+      border: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="slides/slides.md"
+               data-separator="^\n>>\n"
+               data-separator-vertical="^\nvv\n"
+               data-separator-notes="^Note:"
+               data-charset="utf-8">
+      </section>
+    </div>
+  </div>
+  <script src="reveal/lib/js/head.min.js"></script>
+  <script src="reveal/js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      transition: 'slide',
+      dependencies: [
+        {
+          src: 'reveal/lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: 'reveal/plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'reveal/plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'reveal/plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'reveal/plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: 'reveal/plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

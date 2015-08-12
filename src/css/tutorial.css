@@ -1,0 +1,66 @@
+.tutorial-header * {
+  padding: 0;
+  margin: 0;
+}
+
+.tutorial-header {
+  z-index: 999;
+  position: fixed;
+  height: 100%;
+  bottom: 0px;
+  right: 48px;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+          transition:         transform 0.3s ease-out;
+}
+
+.tutorial-header.is-open {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.tutorial-menu {
+  position: absolute;
+  bottom: 0;
+  height: 48px;
+  border: 0;
+  background-color: #000;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.tutorial-menu img {
+  width: 48px;
+  height: 48px;
+}
+
+.tutorial-nav {
+  position: absolute;
+  bottom: 0;
+  left: 48px;
+  width: 200px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.tutorial-nav ul {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+}
+
+.tutorial-nav li {
+  list-style: none;
+  padding: 16px;
+}
+
+.tutorial-nav li+li {
+  border-top: 1px solid white;
+}
+
+.tutorial-nav li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
